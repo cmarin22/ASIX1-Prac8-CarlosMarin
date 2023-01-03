@@ -1,0 +1,303 @@
+body
+{
+    /* Característiques del body de la pàgina web */
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #202124;
+    background-color: #FFF;
+}
+a
+{
+    /* CSS per fer que l'enllaç no quedi subrallat per defecte */
+    text-decoration: none; /* Que no surti marcat encara que sigui un enllaç */ 
+}
+a:hover
+{
+    /* CSS per fer que l'enllaç quedi subrallat quan passem el ratolí per sobre */
+    text-decoration: underline;
+}
+.botonazul
+{
+    /* CSS per crear el botó blau per iniciar sessió */
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #202124;
+    background: #93baf9;
+    border-color: transparent;
+    box-shadow: 0 1px 3px 1px rgba(0,0,0,.15),0 1px 2px rgba(0,0,0,.3);
+    margin-left: 8px;
+    font-family: Arial;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 16px;
+    margin-left: 10px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    white-space: nowrap;
+}
+.botongris
+{
+    /* CSS pel botó per realitzar la recerca i el botó de la sort */
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    box-sizing: border-box;
+}
+.main-container
+{
+    /* CSS del primer contenidor pare */
+    display: flex; /* El contenidor (div pare) mostrarà els elements (divs fills) a través de flex, és a dir, en fila un al costat de l'altre*/
+    flex-direction: row; /* Cada contenidor anirà un al costat de l'altre */
+    height: 100%; /* Alçada del 100% */
+    justify-content: space-between; /* Space-between per asegurar que els elements estan separats un de l'altre */
+}
+.main-container2
+{
+    /* CSS del segon contenidor pare */
+    display: flex; /* El contenidor (div pare) mostrarà els elements (divs fills) a través de flex, és a dir, en fila un al costat de l'altre*/
+    flex-direction: column; /* Cada contenidor anirà un a sota de l'altre */
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+}
+.main-container3
+{
+    /* CSS del tercer contenidor pare */
+    padding: 20px;
+    max-height: 160px;
+    flex-shrink: 0;
+    box-sizing: border-box; 
+    /*display: block;*/
+}
+.main-container4
+{
+    /* CSS del quart contenidor pare - idioma del buscador (cercador) */
+    flex-shrink: 0;
+    box-sizing: border-box;
+    /*display: block;*/
+}
+.main-container5
+{
+    /* CSS del cinquè contenidor pare - peu de pàgina */
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background: #F2F2F2;
+}
+.relleno
+{
+    /* CSS entre el contenidor seleccionador d'idioma i el peu de pàgina per crear un espai de separació */
+    height: 136px;
+}
+.item-container
+{
+    /* CSS de la part esquerra de la capçalera, els dos enllaços */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+.item-container2
+{
+    /* CSS de la part dreta de la capçalera, els dos primers enllaços */
+    max-height: 230px;
+    position: relative;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: calc(100% - 200px);
+    margin-top: auto;
+}
+.item-container3
+{
+    /* CSS contenidor del formulari per donar-li l'estètica adequada */
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    width: auto;
+    max-width: 584px;
+    position: relative;
+}
+.item-container4
+{
+    /* CSS per definir el contenidor on estaran situats els botons de recerca i bona sort */
+    height: 70px;
+    padding-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-container4
+{
+    /* CSS per definir el contenidor on estaran situats els enllaços per altres idiomes */
+    font-size: small;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.item-container5
+{
+    /* CSS per definir el contenidor que defineix la part superior del peu de pàgina */
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #70757A;
+}
+.sub-item-container1
+{
+    /* CSS per introduir els elements del buscador */
+    flex: 1;
+    display: flex;
+    padding: 5px 8px 0 14px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: normal;
+    justify-content: normal;
+    align-items: normal;
+    vertical-align: middle;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.lupa
+{
+    /* CSS per donar alçada a la lupa situada al buscador */
+    align-items: center;
+    padding-right: 13px;
+    vertical-align: middle;
+}
+.buscador 
+{
+    /* CSS per definir com és el lloc del buscador on introduim el text */
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    flex: 100%;
+    font-size: 16px;
+    width: 443px;
+    height: 34px;
+    cursor: text;
+    text-align: start;
+}
+.iconos
+{
+    /* CSS per definir les icones de veu i imatges */
+    align-items: stretch;
+    flex-direction: row;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    vertical-align: middle;
+    top: 9%;
+}
+.idiomes
+{
+    /* CSS per definir l'estètica dels enllaços dels idiomes */
+    color: #4d5156;
+    display: inline-block;
+    line-height: 28px;
+    text-align: center;
+}
+.enlace-cap
+{
+    /* CSS per definir el text de la part esquerra de la capçalera  */
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #202124;
+}
+.enlace-ap
+{
+    /* CSS per definir el SVG que s'encarrega de fer els 9 punts de la part dreta de la capçalera */
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    outline: none;
+    vertical-align: middle;
+    padding: 8px;
+    cursor: pointer;
+    color: #202124;
+}
+.enlace-ap2
+{
+    /* CSS per definir el SVG que s'encarrega de fer la lupa */
+    margin-top: 3px;
+    color: #9aa0a6;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    display: inline-block;
+    fill: currentColor;
+    position: relative;
+    vertical-align: middle;
+    top: 9%;
+}
+.pie
+{
+    /* CSS per definir el contenidor que defineix la part inferior del peu de pàgina */
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.izquierda
+{
+    /* CSS per situar a l'esquerra del peu de pàgina aquesta part */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-width: 30%;
+}
+.centro
+{
+    /* CSS per situar al centre del peu de pàgina aquesta part */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.derecha
+{
+    /* CSS per situar a la dreta del peu de pàgina aquesta part */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    min-width: 30%;
+}
+.texto
+{
+    /* CSS per definir el text que hi ha dins del peu de pàgina */
+    color: #70757a;
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+}
